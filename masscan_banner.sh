@@ -9,4 +9,5 @@ sudo ./bin/masscan \
 --includefile ./data/allowlist.conf \
 --excludefile ./data/blocklist.conf \
 -oX ./results/masscan_banner_result.xml
+#--pcap ./results/masscan_banner_result.pcap \
 # noreset = true

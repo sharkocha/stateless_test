@@ -8,3 +8,4 @@ sudo ./bin/masscan \
 --includefile ./data/allowlist.conf \
 --excludefile ./data/blocklist.conf \
 -oX ./results/mas_result.xml
+#--pcap ./results/mas_result.pcap \

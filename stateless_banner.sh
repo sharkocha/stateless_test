@@ -8,4 +8,5 @@ sudo ./bin/masscan \
 --includefile ./data/allowlist.conf \
 --excludefile ./data/blocklist.conf \
 -oX ./results/stateless_result.xml
+#--pcap ./results/stateless_result.pcap \
 # noreset = true
