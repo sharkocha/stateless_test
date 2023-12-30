@@ -1,5 +1,6 @@
 sudo ./bin/masscan \
 --stateless-banners \
+--probe getrequest \
 --ports 80 \
 --rate 100 \
 --retries 0 \
@@ -9,4 +10,5 @@ sudo ./bin/masscan \
 --excludefile ./data/blocklist.conf \
 -oX ./results/stateless_result.xml
 #--pcap ./results/stateless_result.pcap \
+#--capture stateless \
 # noreset = true
