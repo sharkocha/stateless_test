@@ -57,5 +57,20 @@ Create scan list for LZR:
 
 ```
 ./bin/zmap --dryrun --allowlist-file ./data/allowlist.conf -p 80 | grep ip | cut -f 7 -d ' ' > ./data/lzrlist.txt
+sed "s/$/&:80/g" lzrlist.txt > lzrlist.conf
 ```
 
+Check network rate:
+
+```
+sudo nload eth0 -m
+```
+
+Only switch on specified number of CPUs by modifying kernel parameter:
+
+```
+su
+vim /etc/default/grub
+    GRUB_CMDLINE_LINUX="nr_cpus=2"
+update-grub
+```

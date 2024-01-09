@@ -2,11 +2,10 @@ sudo ./bin/zmap \
 --target-port 80 \
 --allowlist-file "./data/allowlist.conf" \
 --blocklist-file "./data/blocklist.conf" \
---rate 100 \
+--rate 1000 \
 --retries 0 \
---cooldown-time 15 \
---seed 1 \
---dedup-method window | \
+--cooldown-time 5 \
+--seed 1  | \
 ./bin/zgrab2 \
 http \
 -o ./results/zmap_zgrab_result.json \
