@@ -1,4 +1,4 @@
-sudo ./bin/masscan \
+sudo ./bin/zbanner \
 --ports 80 \
 --rate 10000 \
 --retries 0 \
@@ -11,4 +11,4 @@ sudo ./bin/masscan \
 sudo ./bin/lzr \
 --handshakes http \
 -sendInterface enx2c16dba62660 \
--f ./results/masscan_lzr_banner_result.json
+-f ./results/zbanner_lzr_banner_result.json

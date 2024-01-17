@@ -8,5 +8,5 @@ sudo ./bin/zmap \
 --seed 1  | \
 ./bin/zgrab2 \
 http \
--o ./results/zmap_zgrab_result.json \
+-o /dev/null \
 #--user-agent "xxx"

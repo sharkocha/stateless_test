@@ -8,7 +8,7 @@ sudo ./bin/zmap \
 --no-header-row \
 --output-fields "saddr,sport,success,classification" \
 --output-file ./results/zmap_result.csv \
---rate 250000
+--rate 1000000
 # --dedup-window-size 10000 \
 # --dedup-method none \
 #--dedup-method window \

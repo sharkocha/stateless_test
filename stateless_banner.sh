@@ -1,11 +1,12 @@
-sudo ./bin/masscan \
+sudo ./bin/zbanner \
+-p80 \
 --stateless-banners \
 --probe getrequest \
---ports 80 \
---rate 1000000 \
+--capture stateless \
+--rate 180000 \
 --retries 0 \
---seed 1 \
---wait 5 \
+--seed 2 \
+--wait 100 \
 --includefile ./data/allowlist.conf \
 --excludefile ./data/blocklist.conf \
 -oX ./results/stateless_result.xml

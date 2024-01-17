@@ -6,6 +6,7 @@ Experiment for stateless banner grab.
 
 Binaries need to compiled in `bin\`:
 
+- ZBanner
 - [Zmap](https://github.com/zmap/zmap)
 - [LZR](https://github.com/stanford-esrg/lzr)
 - [ZGrab2](https://github.com/zmap/zgrab2)
