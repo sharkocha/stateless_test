@@ -1,0 +1,12 @@
+sudo ../bin/xtate \
+-excludefile ../data/blocklist.conf \
+-iL ../data/regions/china_continent20240101-3,4308,1216.txt \
+-p 443 \
+-rate 100000 \
+-scan tcp-state \
+-probe tls-state \
+-probearg "-subprobe get-state" \
+-rx-num 4 \
+-print queue \
+-wait 40 \
+-out null
